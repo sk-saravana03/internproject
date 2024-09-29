@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Information</h1>
+    <div class="details">
+      <p><strong>Date:</strong> October 15, 2024</p>
+      <p><strong>Time:</strong> 7:00 PM - 10:00 PM</p>
+      <p><strong>Location:</strong> Jenny's Residency, Coimbatore</p>
+      <p class="event-details">Join us for a special event</p>
+    </div>
+    <button class="rsvp-btn" onclick="showRSVP()">Response Now</button>
+  </div>
+
+  <div class="modal" id="rsvp-modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Response for the Event</h2>
+      <form id="rsvp-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <button type="submit">Submit</button>
+      </form>
+      <p id="response-message"></p>
+    </div>
+  </div>
+
+  </span>
+
+  <script src="script.js"></script>
+</body>
+</html>
